@@ -73,12 +73,12 @@ helpers do
   
 end
 
-configure :build do
-  app.condenser.register_postprocessor('text/css', ::Condenser::PurgeCSSProcessor.new(app.condenser.npm_path, {
-    content: [File.expand_path('./docs/**/*.html'), File.expand_path('./docs-src/assets/javascripts/**/*.js')],
-    safelist: ["/hljs*/", "/.*code.*/"]
-  }))  
-end
+# configure :build do
+#   app.condenser.register_postprocessor('text/css', ::Condenser::PurgeCSSProcessor.new(app.condenser.npm_path, {
+#     content: [File.expand_path('./docs/**/*.html'), File.expand_path('./docs-src/assets/javascripts/**/*.js')],
+#     safelist: ["/hljs*/", "/.*code.*/"]
+#   }))
+# end
 
 # With alternative layout
 # page '/path/to/file.html', layout: 'other_layout'

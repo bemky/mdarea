@@ -27,6 +27,7 @@ app.condenser.register_preprocessor('application/javascript', ::Condenser::Babel
 }))
 app.condenser.unregister_minifier('application/javascript')
 
+
 # Layouts
 # https://middlemanapp.com/basics/layouts/
 
@@ -73,12 +74,12 @@ helpers do
   
 end
 
-# configure :build do
-#   app.condenser.register_postprocessor('text/css', ::Condenser::PurgeCSSProcessor.new(app.condenser.npm_path, {
-#     content: [File.expand_path('./docs/**/*.html'), File.expand_path('./docs-src/assets/javascripts/**/*.js')],
-#     safelist: ["/hljs*/", "/.*code.*/"]
-#   }))
-# end
+configure :build do
+  config[:baseurl] = "https://bemky.github.io/mdarea/assets"
+  app.condenser.register_postprocessor('text/css', ::Condenser::PurgeCSSProcessor.new(app.condenser.npm_path, {
+    content: [File.expand_path('./docs/**/*.html'), File.expand_path('./docs-src/**/*.js')]
+  }))
+end
 
 # With alternative layout
 # page '/path/to/file.html', layout: 'other_layout'

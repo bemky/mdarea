@@ -75,7 +75,7 @@ helpers do
 end
 
 configure :build do
-  config[:baseurl] = "https://bemky.github.io/mdarea/assets"
+  set :asset_host, "https://bemky.github.io/mdarea/assets"
   app.condenser.register_postprocessor('text/css', ::Condenser::PurgeCSSProcessor.new(app.condenser.npm_path, {
     content: [File.expand_path('./docs/**/*.html'), File.expand_path('./docs-src/**/*.js')]
   }))

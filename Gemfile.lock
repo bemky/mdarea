@@ -1,4 +1,13 @@
 GIT
+  remote: https://github.com/bemky/middleman-condenser.git
+  revision: f2a24ceea0dd53973f79894b45876cbcd1213f9b
+  branch: asset-host
+  specs:
+    middleman-condenser (0.0.3)
+      condenser (>= 0.1)
+      middleman-core (>= 4.2.1)
+
+GIT
   remote: https://github.com/bemky/uniform.git
   revision: b837895acbb3a197961cf257b71d67c45fd7876c
   specs:
@@ -13,14 +22,6 @@ GIT
       erubi (~> 1.0)
       listen
       rack (> 1, < 3)
-
-GIT
-  remote: https://github.com/malomalo/middleman-condenser.git
-  revision: 3664bffe88a14f5629f7d7aac90455603b4caee2
-  specs:
-    middleman-condenser (0.0.3)
-      condenser (>= 0.1)
-      middleman-core (>= 4.2.1)
 
 GIT
   remote: https://github.com/middleman/middleman.git

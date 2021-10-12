@@ -7,9 +7,6 @@
     content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Use the title from a page's frontmatter if it has one -->
     <title><%= current_page.data.title || "MDArea" %></title>
-    <% if config[:baseurl] %>
-    <base href="<%= config[:baseurl] %>">
-    <% end %>
     <%= stylesheet_link_tag "main" %>
     <%= javascript_include_tag "main" %>
 </head>

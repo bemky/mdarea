@@ -1,6 +1,6 @@
 {
   "name": "mdarea",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "A textarea augmentation that adds a toolbar and keyboard shortcuts to any textarea to turn it into a lightweight markdown editor.",
   "main": "lib/mdarea.js",
   "directories": {

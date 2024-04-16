@@ -9,22 +9,6 @@ activate :condenser do |config|
   config.path += ['./lib']
 end
 app.condenser.register_postprocessor('text/css', ::Condenser::CSSMediaCombinerProcessor)
-app.condenser.unregister_preprocessor('application/javascript')
-app.condenser.register_preprocessor('application/javascript', ::Condenser::JSAnalyzer)
-app.condenser.register_preprocessor('application/javascript', ::Condenser::BabelProcessor.new(File.expand_path('./'),  {
-  plugins: [
-    '@babel/plugin-proposal-class-properties',
-    '@babel/plugin-proposal-optional-chaining',
-    '@babel/plugin-proposal-export-default-from',
-    ["@babel/plugin-transform-runtime", { corejs: 3, useESModules: true }]
-  ],
-  presets: [
-    ['@babel/preset-env', {
-      modules: false,
-      targets: { browsers: '> 1% and not dead' }
-    }]
-  ]
-}))
 app.condenser.unregister_minifier('application/javascript')
 
 

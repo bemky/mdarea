@@ -35,5 +35,9 @@
   "bugs": {
     "url": "https://github.com/bemky/mdarea/issues"
   },
-  "homepage": "https://github.com/bemky/mdarea#readme"
+  "homepage": "https://github.com/bemky/mdarea#readme",
+  "dependencies": {
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-node-resolve": "^15.2.3"
+  }
 }

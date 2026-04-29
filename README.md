@@ -1,4 +1,4 @@
-# MDArea
+<img src="https://raw.githubusercontent.com/bemky/mdarea/master/mdarea.svg" width="300" alt="MDAREA">
 MDArea is a textarea augmentation that adds a toolbar and keyboard shortcuts to any textarea to turn it into a lightweight markdown editor.
 
 [Demo and Installation Guide](https://bemky.github.io/mdarea/)

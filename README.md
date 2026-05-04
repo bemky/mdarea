@@ -27,6 +27,25 @@ const area = new MDArea({
 document.append(area.el);
 ```
 
+## Markdown Parser
+The Preview view renders with a small built-in markdown parser. To use a different parser (e.g. [marked](https://github.com/markedjs/marked) or [snarkdown](https://github.com/developit/snarkdown)), assign a function that takes a markdown string and returns an HTML string to `MDArea.parser`:
+
+```javascript
+import MDArea from 'mdarea';
+import { marked } from 'marked';
+
+MDArea.parser = marked.parse;
+```
+
+```javascript
+import MDArea from 'mdarea';
+import snarkdown from 'snarkdown';
+
+MDArea.parser = snarkdown;
+```
+
+This applies to every `<md-area>` instance on the page.
+
 # Development
 Docs are generated using [Middleman](https://middlemanapp.com/)
 

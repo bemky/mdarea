@@ -7,6 +7,8 @@
     "lib": "lib"
   },
   "devDependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
     "@babel/core": "^7.15.8",
     "@babel/plugin-proposal-class-properties": "^7.14.5",
     "@babel/plugin-proposal-export-default-from": "^7.14.5",
@@ -14,13 +16,17 @@
     "@babel/plugin-transform-runtime": "^7.15.8",
     "@babel/preset-env": "^7.15.8",
     "@babel/runtime-corejs3": "^7.15.4",
+    "esbuild": "^0.24.0",
     "purgecss": "^4.0.3",
     "rollup": "^2.79.2",
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-node-resolve": "^5.2.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docs:js": "esbuild docs/main.js --bundle --outfile=_docs/main.js --alias:mdarea=./lib/mdarea.js --format=iife",
+    "docs:build": "npm run docs:js && eleventy",
+    "docs:server": "npm run docs:js && eleventy --serve"
   },
   "repository": {
     "type": "git",

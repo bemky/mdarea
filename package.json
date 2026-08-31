@@ -17,10 +17,7 @@
     "@babel/preset-env": "^7.15.8",
     "@babel/runtime-corejs3": "^7.15.4",
     "esbuild": "^0.24.0",
-    "purgecss": "^4.0.3",
-    "rollup": "^2.79.2",
-    "rollup-plugin-commonjs": "^10.1.0",
-    "rollup-plugin-node-resolve": "^5.2.0"
+    "purgecss": "^4.0.3"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

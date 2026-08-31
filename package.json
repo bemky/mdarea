@@ -1,6 +1,6 @@
 {
   "name": "mdarea",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "A textarea augmentation that adds a toolbar and keyboard shortcuts to any textarea to turn it into a lightweight markdown editor.",
   "main": "lib/mdarea.js",
   "directories": {
@@ -9,18 +9,7 @@
   "devDependencies": {
     "@11ty/eleventy": "^3.0.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
-    "@babel/core": "^7.15.8",
-    "@babel/plugin-proposal-class-properties": "^7.14.5",
-    "@babel/plugin-proposal-export-default-from": "^7.14.5",
-    "@babel/plugin-proposal-optional-chaining": "^7.14.5",
-    "@babel/plugin-transform-runtime": "^7.15.8",
-    "@babel/preset-env": "^7.15.8",
-    "@babel/runtime-corejs3": "^7.15.4",
-    "esbuild": "^0.24.0",
-    "purgecss": "^4.0.3",
-    "rollup": "^2.79.2",
-    "rollup-plugin-commonjs": "^10.1.0",
-    "rollup-plugin-node-resolve": "^5.2.0"
+    "esbuild": "^0.24.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -41,10 +30,5 @@
   "bugs": {
     "url": "https://github.com/bemky/mdarea/issues"
   },
-  "homepage": "https://github.com/bemky/mdarea#readme",
-  "dependencies": {
-    "@rollup/plugin-commonjs": "^25.0.7",
-    "@rollup/plugin-node-resolve": "^15.2.3",
-    "@rollup/plugin-replace": "^6.0.2"
-  }
+  "homepage": "https://github.com/bemky/mdarea#readme"
 }
